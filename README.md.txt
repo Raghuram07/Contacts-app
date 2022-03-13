@@ -1,4 +1,4 @@
-1.make sure node is installed. now,
+1.Make sure node is installed. now ,
 2.Checkout to master branch.
 3.There are two folders Client and Server.
 4.To run the client app, got to the Client\myContacts and do run : npm install
