@@ -1,0 +1,15 @@
+const mongoose=require("mongoose")
+const {ObjectId} = require('mongodb'); 
+const Schema = mongoose.Schema
+const Contact = new Schema({
+    name:String,
+    phone:String,
+    email:String,
+})
+const userSchema = new Schema({
+    userName:String,
+    password:String,
+    confirm:String,
+    contacts: [Contact]
+})
+module.exports = mongoose.model('user-contacts',userSchema,'users')
